@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uygulama İndir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
+    body {
+      background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+      display: flex; justify-content: center; align-items: center;
+      height: 100vh; color: #fff; text-align: center;
+    }
+    .container {
+      background: rgba(255,255,255,0.05);
+      padding: 40px 30px; border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+      max-width: 400px; width: 90%;
+    }
+    h1 { font-size:2rem; margin-bottom:20px; }
+    p { font-size:1rem; margin-bottom:30px; color:#e0e0e0; }
+    .buttons { display:flex; flex-direction:column; gap:20px; }
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap:10px;
+      padding: 15px 20px; border-radius: 15px;
+      font-weight: 600; font-size:1rem; text-decoration:none;
+      transition: transform 0.2s, box-shadow 0.2s; color: #fff;
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+    .appstore { background: linear-gradient(90deg, #000000, #434343); }
+    .playstore { background: linear-gradient(90deg, #00c853, #b2ff59); color:#000; }
+    .btn img { width:24px; height:24px; }
+    .icon-note { width:16px; height:16px; }
+    footer { margin-top:30px; font-size:0.75rem; color:#ccc; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Uygulamamızı İndirin</h1>
+    <p>Tek link ile App Store ve Google Play’den hemen ulaşın.</p>
+    <div class="buttons">
+      <a href="https://apps.apple.com/tr/app/idXXXXXXXXX" class="btn appstore">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+        App Store’dan İndir
+        <img class="icon-note" src="https://upload.wikimedia.org/wikipedia/commons/1/13/RegisteredTM.svg" alt="Trademark">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.example.app" class="btn playstore">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Logo">
+        Google Play’den İndir
+        <img class="icon-note" src="https://upload.wikimedia.org/wikipedia/commons/1/13/RegisteredTM.svg" alt="Trademark">
+      </a>
+    </div>
+    <footer>App Store ve Google Play, ilgili markaların tescilli markalarıdır. © 2025 Senin Uygulaman</footer>
+  </div>
+</body>
+</html>
